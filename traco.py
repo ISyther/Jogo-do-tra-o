@@ -26,7 +26,7 @@ while True:
     print("Jogardor %i\n".center(20) %jogador)
     fileira=input("Digite a fileira a jogar\nA, B, C ou D: ")
     
-    if(fileira.upper() != "A" or "B" or "C" or "D"):
+    if(fileira.upper() != "A" and fileira.upper() != "B" and fileira.upper() != "C" and fileira.upper() != "D"):
         print("\nParabens jogador %i voce perdeu a vez!" %jogador)
         if(jogador == 1):
             jogador += 1
@@ -34,7 +34,7 @@ while True:
             jogador -= 1
         continue
     
-    quant=int(input("Digite a quantida de traços a serem tirados: "))
+    quant=int(input("Digite a quantida de traÃ§os a serem tirados: "))
 
 
     
